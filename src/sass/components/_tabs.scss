@@ -1,0 +1,29 @@
+.tabs {
+  position: relative;
+  min-height: 9rem;
+  
+}
+
+.tab {
+  float: left;
+  margin: 0 -1.2rem;
+  
+}
+.tab label {
+  margin: auto 0.8rem;
+  padding: 0.5rem 1.5rem;
+  position: relative;
+  opacity: 0.5;
+  font-size: 1.9rem;
+ 
+}
+.tab [type="radio"] {
+  opacity: 0;
+  font-weight: 100;
+}
+
+[type="radio"]:checked ~ label {
+  z-index: 2;
+  border-bottom: 0.3rem solid steelblue;
+  opacity: 1;
+}

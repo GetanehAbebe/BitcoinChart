@@ -1,0 +1,32 @@
+.u-center-text {
+  text-align: center !important;
+}
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+  @include responed(tab-port) {
+    margin-bottom: 5rem !important;
+  }
+}
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+  @include responed(tab-port) {
+    margin-bottom: 3rem !important;
+  }
+}
+.u-margin-bottom-small {
+  margin-bottom: 1rem;
+}
+
+.u-margin-top-big {
+  margin-bottom: 8rem;
+}
+
+.u-margin-top-huge {
+  margin-bottom: 10rem;
+}
+.bg-danger-1 {
+  background-color: rgb(252, 104, 104);
+}
+.bg-success-1 {
+  background-color: $color-green-light;
+}

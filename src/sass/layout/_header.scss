@@ -1,0 +1,78 @@
+.header {
+  margin: 1rem 0.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: $color-white;
+  // box-shadow: rgb(83, 83, 83) 0 0 0 .2rem;
+  border-radius: 0.4rem;
+  border-bottom: 0.5rem solid rgba($color-grey, 0.4);
+  display: flex;
+  flex-direction: row;
+  &--left {
+    text-align: left;
+    padding-left: 1rem;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 5rem;
+    .date {
+      font-size: 1.2rem;
+      text-align: left;
+      color: $color-grey;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: row;
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin: 1rem auto 0 auto;
+      img {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;
+        align-self: center;
+      }
+    }
+  }
+  &--right {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    margin-right: 3rem;
+    .count {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      & > * {
+        margin: auto 0.7rem;
+      }
+      .change-sign {
+        font-size: 4rem;
+        height: 4rem;
+        font-weight: 900;
+        margin-right: 0;
+      }
+      .currnet-count {
+        font-size: 2.5rem;
+        font-weight: 900;
+      }
+    }
+    .changes {
+      display: flex;
+      justify-content: center;
+      & > p {
+        margin: auto 1rem;
+        font-size: 1.6rem;
+        font-size: 600;
+      }
+    }
+  }
+}
+
+.color-red {
+  color: red;
+}
+.color-green {
+  color: green;
+}
